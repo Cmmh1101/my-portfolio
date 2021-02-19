@@ -321,7 +321,7 @@ hr {
     z-index: 2;
     left: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.781);
+    background-color: rgba(255, 255, 255, 0.904);
     border-radius: 5px;
     overflow: hidden;
     transition: all .4s ease-in-out;
@@ -329,7 +329,7 @@ hr {
 
 .text-container:hover {
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.966);
+    background-color: rgb(255, 255, 255);
 }
 
 .name {
