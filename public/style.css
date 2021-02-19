@@ -213,7 +213,7 @@ a {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    background-image: url(/public/img/landing-restaurant.jpg);
+    background-image: url(/img/landing-restaurant.jpg);
     background-size: cover;
     background-position: left center;
     transition: all .5s ease-in-out;
@@ -232,7 +232,7 @@ a {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    background-image: url(/public/img/teque-dachi-site.jpg);
+    background-image: url(/img/teque-dachi-site.jpg);
     background-size: cover;
     background-position: left center;
     transition: all .5s ease-in-out;
@@ -251,7 +251,7 @@ a {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    background-image: url(/public/img/mscanes-site.jpg);
+    background-image: url(/img/mscanes-site.jpg);
     background-size: cover;
     background-position: left center;
     transition: all .5s ease-in-out;
@@ -270,7 +270,7 @@ a {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    background-image: url(/public/img/task-manager-site.jpg);
+    background-image: url(/img/task-manager-site.jpg);
     background-size: cover;
     background-position: left center;
     transition: all .5s ease-in-out;
@@ -289,7 +289,7 @@ a {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    /* background-image: url(/public/img/mscanes-site.jpg);
+    /* background-image: url(/img/mscanes-site.jpg);
     background-size: cover;
     background-position: left center; */
     transition: all .5s ease-in-out;
@@ -339,14 +339,12 @@ a {
     width: 160px;
     background: rgb(1, 76, 255);
     background: linear-gradient(41deg, rgba(1, 76, 255, 1) 0%, rgba(4, 173, 191, 1) 100%);
-    /* background-color: var(--light-blue); */
     padding: 15px;
     margin-bottom: 50px;
     margin-left: 32%;
 }
 
 .button:hover {
-    /* background: rgba(34, 111, 211, 0.726); */
     background: rgb(1, 76, 255);
     background: linear-gradient(41deg, rgba(1, 76, 255, 1) 0%, rgba(4, 173, 191, 0.7329306722689075) 100%);
     cursor: pointer;
@@ -485,7 +483,7 @@ a {
         position: relative;
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/landing-restaurant.jpg);
+        background-image: url(/img/landing-restaurant.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -502,7 +500,7 @@ a {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/teque-dachi-site.jpg);
+        background-image: url(/img/teque-dachi-site.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -518,7 +516,7 @@ a {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/mscanes-site.jpg);
+        background-image: url(/img/mscanes-site.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -534,7 +532,7 @@ a {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/task-manager-site.jpg);
+        background-image: url(/img/task-manager-site.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -550,7 +548,7 @@ a {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/mscanes-site.jpg);
+        background-image: url(/img/mscanes-site.jpg);
         background-size: cover;
         background-position: left center;
     }
