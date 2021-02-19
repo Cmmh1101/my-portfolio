@@ -1,0 +1,11 @@
+{
+  "name": "portfoliosite",
+  "version": "1.0.0",
+  "description": "this is my portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carla Montano",
+  "license": "ISC"
+}
