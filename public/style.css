@@ -90,7 +90,7 @@ a {
 
 .image-container {
     position: relative;
-    background-image: url(/public/img/hero-background-blue.png);
+    background-image: url(/img/hero-background-blue.png);
     background-position: right center;
     background-size: cover;
     height: 100%;
@@ -618,7 +618,7 @@ a {
         margin-top: 20px;
         height: 450px;
         width: 225px;
-        background-image: url(/public/img/about-photo.jpg);
+        background-image: url(/img/about-photo.jpg);
         background-size: cover;
         background-position: top center;
     }
