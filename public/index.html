@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/public/img/faviconblue.png" type="image/png" sizes="16x12">
     <title>Portfolio Site</title>
@@ -50,13 +51,13 @@
     <section id="hero">
         <div class="container">
             <div class="overlay"></div>
-            <div class="image-container"></div>
+            <div class="container-image"></div>
         </div>
         <div class="hero-text">
             <h1>
                 <span class="firstWord">Solving</span><br />Problems & Creating <br />Solutions
             </h1>
-            <a href="#" class="resume-cta"><span class="resume-text">Resume</span></a>
+            <a href="#" class="resume-cta">Hire Me</a>
         </div>
         <div class="arrow-down">
             <a href="#projects"><i class="fas fa-angle-down"></i></a>
@@ -80,7 +81,7 @@
                             </div>
                             <button class="button">
                                 <a href="#">
-                                    <h3>View Code</h3>
+                                    View Code
                                 </a>
                             </button>
                         </div>
@@ -99,7 +100,7 @@
                             </div>
                             <button class="button">
                                 <a href="#">
-                                    <h3>View Project</h3>
+                                    View Project
                                 </a>
                             </button>
                         </div>
@@ -118,7 +119,7 @@
                             </div>
                             <button class="button">
                                 <a href="#">
-                                    <h3>View Project</h3>
+                                    View Project
                                 </a>
                             </button>
                         </div>
@@ -136,7 +137,7 @@
                             </div>
                             <button class="button">
                                 <a href="#">
-                                    <h3>View Code</h3>
+                                    View Code
                                 </a>
                             </button>
                         </div>
@@ -154,7 +155,7 @@
                             </div>
                             <button class="button">
                                 <a href="#">
-                                    <h3>View Code</h3>
+                                    View Code
                                 </a>
                             </button>
                         </div>
@@ -190,66 +191,65 @@
     <!--End of About Section-->
 
     <!-- Skills set -->
-    <section id="skills">
-        <div class="skills-container">
-            <div class="project-header">Skills Set</div>
-            <div class="skills-area">
-                <hr>
-                <div class="icons-container">
-                    <img src="img/html.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/css.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/sass.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/bootstrap.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/javascript.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/jquery.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/greensock.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/react.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/gatsby.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/visualstudiocode.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/git.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/github.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/adobeilustrator.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/photoshop.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/abodexd.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/figma.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/wordpress.svg" alt="HTML icon">
-                </div>
-                <div class="icons-container">
-                    <img src="img/shopify.svg" alt="HTML icon">
+    <section id="skillset" class="even section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h3>Skillset</h3>
                 </div>
             </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon html" src="img/cib-html5.svg" alt="HTML icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon css" src="img/css.svg" alt="css icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon sass" src="img/cib-sasspink.svg" alt="sass icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon bst" src="img/purplebootstrap.svg" alt="Bootstrap icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon js" src="img/cib-javascript.svg" alt="JavaScript icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon jq" src="img/jquery.svg" alt="JQuery icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon gsap" src="img/cib-greensock.svg" alt="GSAP icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon react" src="img/react.svg" alt="React icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon vsc" src="img/cib-visual-studio-code.svg" alt="Visual Studio Code icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon git" src="img/git.svg" alt="Git icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon gh" src="img/github.svg" alt="Github icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon ai" src="img/adobeilustrator.svg" alt="Adobe Ilustrator icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon ps" src="img/cib-adobe-photoshop.svg" alt="Photoshop icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon xd" src="img/abodexd.svg" alt="Adobe XD icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon wp" src="img/cib-wordpress.svg" alt="Wordpress icon">
+                </div>
+                <div class="col-sm-3 col-xs-4 image-container">
+                    <img class="logo-icon shp" src="img/cib-shopify.svg" alt="shopify icon">
+                </div>
+            </div>
+        </div>
         </div>
 
     </section>

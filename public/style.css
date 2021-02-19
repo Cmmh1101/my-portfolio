@@ -88,7 +88,7 @@ a {
     overflow: hidden;
 }
 
-.image-container {
+.container-image {
     position: relative;
     background-image: url(/public/img/hero-background-blue.png);
     background-position: right center;
@@ -139,19 +139,28 @@ a {
 .resume-cta {
     border: 2px solid var(--light-blue);
     width: 175px;
-    padding: 15px 15px 25px 15px;
+    padding: 15px;
     margin-top: 20px;
     text-align: center;
+    text-decoration: none;
+    color: var(--light-gray);
+    cursor: pointer;
+    text-transform: capitalize;
 }
 
-.resume-text {
+
+/* .resume-cta a {
+    text-decoration: none;
     color: var(--light-gray);
-    font-size: 1.2rem;
-}
+    cursor: pointer;
+    font-size: 1rem;
+} */
 
 .resume-cta:hover {
     background: rgb(1, 76, 255);
     background: linear-gradient(41deg, rgba(1, 76, 255, 1) 0%, rgba(4, 173, 191, 0.7329306722689075) 100%);
+    color: var(--light-gray);
+    text-decoration: none;
 }
 
 .arrow-down {
@@ -186,17 +195,24 @@ a {
 }
 
 .project-header {
-    color: var(--orange-color);
-    font-size: 3.5rem;
-    font-weight: 600;
+    color: var(--dark-grey);
+    font-size: 2.5rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
     position: relative;
     margin-top: 50px;
-    padding: 50px 0;
-    /* margin: 50px;   */
+    padding: 20px 0;
+}
+
+hr {
+    border: 0;
+    width: 80%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(19, 99, 226), rgba(0, 0, 0, 0));
+    margin: 0 auto;
 }
 
 .projects {
@@ -400,6 +416,58 @@ a {
     margin: 10px 0;
 }
 
+
+/* SKILLS SECTION */
+
+#skillset {
+    width: 100%;
+    height: auto;
+}
+
+
+/* .container-fluid {
+    width: 100%;
+} */
+
+h3 {
+    color: var(--dark-grey);
+    font-size: 2.5rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.logo-icon {
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 223, 223);
+    /* padding: 15px; */
+    margin-top: 20px;
+    border-radius: 20%;
+}
+
+img.logo-icon:hover {
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
+}
+
+
+/* FOOTER SECTION */
+
 .social-icons {
     display: flex;
     align-items: center;
@@ -454,7 +522,8 @@ a {
         justify-content: space-between;
         align-items: center;
         list-style: none;
-        padding: 20px;
+        padding: 20px 0;
+        margin-bottom: 0;
         background-color: rgba(0, 0, 0, 0.6);
     }
     #mobile-nav .mobile-navbar ul a {
@@ -629,6 +698,27 @@ a {
         width: 100%;
         font-size: 0.75rem;
     }
+    /* SKILLS MOBILE */
+    .image-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* margin: 10px 0; */
+    }
+    .logo-icon {
+        width: 60px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(226, 223, 223);
+        padding: 5px;
+        /* margin-top: 10px; */
+        border-radius: 20%;
+    }
+    img.logo-icon:hover {
+        box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
+    }
+    /* SOCIAL MOBILE */
     .social-icons {
         display: flex;
         align-items: center;
