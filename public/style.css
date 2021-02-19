@@ -41,6 +41,13 @@ a {
     align-items: center;
     padding: 0 10%;
     right: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav .nav-bar:hover {
+    background-color: rgba(34, 110, 211, 0.39);
 }
 
 #nav .nav-bar .logo #name img {
@@ -74,8 +81,6 @@ a {
 
 #nav .nav-bar ul li a:hover {
     font-weight: 700;
-    color: var(--light-blue);
-    border-bottom: 3px solid var(--light-blue);
 }
 
 
@@ -186,9 +191,9 @@ a {
 }
 
 .project-header {
-    color: var(--orange-color);
-    font-size: 3.5rem;
-    font-weight: 600;
+    color: var(--dark-grey);
+    font-size: 3rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,6 +202,14 @@ a {
     margin-top: 50px;
     padding: 50px 0;
     /* margin: 50px;   */
+}
+
+hr {
+    border: 0;
+    width: 80%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(19, 99, 226), rgba(0, 0, 0, 0));
+    margin: 0 auto;
 }
 
 .projects {
@@ -320,12 +333,12 @@ a {
 }
 
 .name {
-    margin-top: 10px;
-    color: var(--dark-grey);
-    font-size: 2rem;
+    margin: 10px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    color: var(--blue-color);
+    color: var(--mid-blue);
 }
 
 .content {
