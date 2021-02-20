@@ -22,6 +22,7 @@
             a {
                 text-decoration: none;
             }
+            /* ====================== NAVIGATION SECTION ======================= */
             
             .menu-btn {
                 position: absolute;
@@ -68,9 +69,8 @@
             }
             
             #nav .nav-bar ul li {
-                /* padding: 10px; */
+                padding-top: 10px;
                 font-size: 1rem;
-                /* padding: 2px; */
                 text-decoration: none;
                 color: var(--light-gray);
             }
@@ -158,12 +158,6 @@
                 cursor: pointer;
                 text-transform: capitalize;
             }
-            /* .resume-cta a {
-    text-decoration: none;
-    color: var(--light-gray);
-    cursor: pointer;
-    font-size: 1rem;
-} */
             
             .resume-cta:hover {
                 background: rgb(4, 173, 191);
@@ -189,7 +183,7 @@
             .arrow-down a i {
                 font-weight: 100;
             }
-            /* PROJECTS SECTION */
+            /* =================== PROJECTS SECTION ================== */
             
             #projects {
                 width: 100%;
@@ -321,8 +315,8 @@
                 border-radius: 5px;
                 margin: 50px;
                 /* background-image: url(/img/mscanes-site.jpg);
-    background-size: cover;
-    background-position: left center; */
+                background-size: cover;
+                background-position: left center; */
                 transition: all .5s ease-in-out;
             }
             
@@ -426,7 +420,7 @@
             .about-text p {
                 margin: 10px 0;
             }
-            /* SKILLS SECTION */
+            /* ======================== SKILLS SECTION =================== */
             
             #skillset {
                 width: 100%;
@@ -528,7 +522,7 @@
                     z-index: 5;
                 }
                 #nav .nav-bar:hover {
-                    background-color: rgba(34, 110, 211, 0.39);
+                    background-color: transparent;
                 }
                 #nav .nav-bar .logo #name img {
                     height: 100%;
@@ -584,6 +578,54 @@
                 .nav-bar ul.nav-menu {
                     flex: 1;
                     margin-left: auto;
+                }
+                .container-image {
+                    position: relative;
+                    background-image: url(/public/img/hero-background-blue.png);
+                    background-position: right center;
+                    background-size: cover;
+                    height: 100%;
+                    width: 100%;
+                    margin-top: 0vh;
+                    animation: scale 15s;
+                }
+                @keyframes scale {
+                    0% {
+                        transform: scale(1.5);
+                    }
+                    100% {
+                        transform: scale(1);
+                    }
+                }
+                .hero-text {
+                    font-size: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: left;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 20%;
+                    left: 10%;
+                    color: var(--light-gray);
+                    text-transform: uppercase;
+                    z-index: 2;
+                }
+                .resume-cta {
+                    border: 2px solid var(--light-blue);
+                    width: 175px;
+                    padding: 15px;
+                    margin-top: 80px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: var(--light-gray);
+                    cursor: pointer;
+                    text-transform: capitalize;
+                }
+                .resume-cta:hover {
+                    background: rgb(4, 173, 191);
+                    background: radial-gradient(circle, rgba(4, 173, 191, 1) 0%, rgba(25, 110, 255, 1) 100%);
+                    color: var(--light-gray);
+                    text-decoration: none;
                 }
                 .arrow-down {
                     display: none;
