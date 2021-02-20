@@ -581,7 +581,7 @@
                 }
                 .container-image {
                     position: relative;
-                    background-image: url(/public/img/hero-background-blue.png);
+                    background-image: url(/img/hero-background-blue.png);
                     background-position: right center;
                     background-size: cover;
                     height: 100%;
