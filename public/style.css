@@ -41,6 +41,13 @@ a {
     align-items: center;
     padding: 0 10%;
     right: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#nav .nav-bar:hover {
+    background-color: rgba(34, 110, 211, 0.39);
 }
 
 #nav .nav-bar .logo #name img {
@@ -74,8 +81,6 @@ a {
 
 #nav .nav-bar ul li a:hover {
     font-weight: 700;
-    color: var(--light-blue);
-    border-bottom: 3px solid var(--light-blue);
 }
 
 
@@ -90,7 +95,7 @@ a {
 
 .container-image {
     position: relative;
-    background-image: url(/public/img/hero-background-blue.png);
+    background-image: url(/img/hero-background-blue.png);
     background-position: right center;
     background-size: cover;
     height: 100%;
@@ -196,7 +201,7 @@ a {
 
 .project-header {
     color: var(--dark-grey);
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -205,6 +210,14 @@ a {
     position: relative;
     margin-top: 50px;
     padding: 20px 0;
+}
+
+hr {
+    border: 0;
+    width: 80%;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(19, 99, 226), rgba(0, 0, 0, 0));
+    margin: 0 auto;
 }
 
 hr {
@@ -229,7 +242,7 @@ hr {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    background-image: url(/public/img/landing-restaurant.jpg);
+    background-image: url(/img/landing-restaurant.jpg);
     background-size: cover;
     background-position: left center;
     transition: all .5s ease-in-out;
@@ -248,7 +261,7 @@ hr {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    background-image: url(/public/img/teque-dachi-site.jpg);
+    background-image: url(/img/teque-dachi-site.jpg);
     background-size: cover;
     background-position: left center;
     transition: all .5s ease-in-out;
@@ -267,7 +280,7 @@ hr {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    background-image: url(/public/img/mscanes-site.jpg);
+    background-image: url(/img/mscanes-site.jpg);
     background-size: cover;
     background-position: left center;
     transition: all .5s ease-in-out;
@@ -286,7 +299,7 @@ hr {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    background-image: url(/public/img/task-manager-site.jpg);
+    background-image: url(/img/task-manager-site.jpg);
     background-size: cover;
     background-position: left center;
     transition: all .5s ease-in-out;
@@ -305,7 +318,7 @@ hr {
     position: relative;
     border-radius: 5px;
     margin: 50px;
-    /* background-image: url(/public/img/mscanes-site.jpg);
+    /* background-image: url(/img/mscanes-site.jpg);
     background-size: cover;
     background-position: left center; */
     transition: all .5s ease-in-out;
@@ -324,7 +337,7 @@ hr {
     z-index: 2;
     left: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color: rgba(255, 255, 255, 0.904);
     border-radius: 5px;
     overflow: hidden;
     transition: all .4s ease-in-out;
@@ -332,16 +345,16 @@ hr {
 
 .text-container:hover {
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.966);
+    background-color: rgb(255, 255, 255);
 }
 
 .name {
-    margin-top: 10px;
-    color: var(--dark-grey);
-    font-size: 2rem;
+    margin: 10px 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
     text-transform: uppercase;
     text-align: center;
-    color: var(--blue-color);
+    color: var(--mid-blue);
 }
 
 .content {
@@ -355,14 +368,12 @@ hr {
     width: 160px;
     background: rgb(1, 76, 255);
     background: linear-gradient(41deg, rgba(1, 76, 255, 1) 0%, rgba(4, 173, 191, 1) 100%);
-    /* background-color: var(--light-blue); */
     padding: 15px;
     margin-bottom: 50px;
     margin-left: 32%;
 }
 
 .button:hover {
-    /* background: rgba(34, 111, 211, 0.726); */
     background: rgb(1, 76, 255);
     background: linear-gradient(41deg, rgba(1, 76, 255, 1) 0%, rgba(4, 173, 191, 0.7329306722689075) 100%);
     cursor: pointer;
@@ -400,7 +411,7 @@ hr {
 .about-image {
     height: 450px;
     width: 400px;
-    background-image: url(/public/img/about-photo.jpg);
+    background-image: url(/img/about-photo.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -554,7 +565,7 @@ img.logo-icon:hover {
         position: relative;
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/landing-restaurant.jpg);
+        background-image: url(/img/landing-restaurant.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -571,7 +582,7 @@ img.logo-icon:hover {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/teque-dachi-site.jpg);
+        background-image: url(/img/teque-dachi-site.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -587,7 +598,7 @@ img.logo-icon:hover {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/mscanes-site.jpg);
+        background-image: url(/img/mscanes-site.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -603,7 +614,7 @@ img.logo-icon:hover {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/task-manager-site.jpg);
+        background-image: url(/img/task-manager-site.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -619,7 +630,7 @@ img.logo-icon:hover {
         box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin: 50px;
-        background-image: url(/public/img/mscanes-site.jpg);
+        background-image: url(/img/mscanes-site.jpg);
         background-size: cover;
         background-position: left center;
     }
@@ -689,7 +700,7 @@ img.logo-icon:hover {
         margin-top: 20px;
         height: 450px;
         width: 225px;
-        background-image: url(/public/img/about-photo.jpg);
+        background-image: url(/img/about-photo.jpg);
         background-size: cover;
         background-position: top center;
     }
