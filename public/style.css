@@ -22,18 +22,16 @@
             a {
                 text-decoration: none;
             }
-            /* NAVIGATION */
-            /* #mobile-nav {
-    display: none;
-} */
             
             .menu-btn {
                 position: absolute;
+                color: var(--light-gray);
+                padding: 20px 20px;
                 cursor: pointer;
-                top: 15px;
-                right: 40px;
+                top: 0;
+                right: 0;
                 z-index: 2;
-                font-size: 2rem;
+                font-size: 3rem;
                 display: none;
             }
             
@@ -90,13 +88,15 @@
             #nav .nav-bar ul li a:hover {
                 font-weight: 700;
             }
-            /* HERO SECTION */
+            /* ====================== HERO SECTION ======================= */
             
             .container {
                 position: relative;
                 height: 100vh;
                 width: 100%;
                 overflow: hidden;
+                padding-right: 0;
+                padding-left: 0;
             }
             
             .container-image {
@@ -144,7 +144,7 @@
             }
             
             .firstWord {
-                color: var(--orange-color);
+                color: var(--light-blue);
             }
             
             .resume-cta {
@@ -166,8 +166,8 @@
 } */
             
             .resume-cta:hover {
-                background: rgb(1, 76, 255);
-                background: linear-gradient(41deg, rgba(1, 76, 255, 1) 0%, rgba(4, 173, 191, 0.7329306722689075) 100%);
+                background: rgb(4, 173, 191);
+                background: radial-gradient(circle, rgba(4, 173, 191, 1) 0%, rgba(25, 110, 255, 1) 100%);
                 color: var(--light-gray);
                 text-decoration: none;
             }
@@ -351,8 +351,8 @@
             }
             
             .name {
-                margin: 10px 0 10px 0;
-                font-size: 1.5rem;
+                margin: 20px 0 10px 0;
+                font-size: 2rem;
                 font-weight: 400;
                 text-transform: uppercase;
                 text-align: center;
@@ -376,8 +376,8 @@
             }
             
             .button:hover {
-                background: rgb(1, 76, 255);
-                background: linear-gradient(41deg, rgba(1, 76, 255, 1) 0%, rgba(4, 173, 191, 0.7329306722689075) 100%);
+                background: rgb(4, 173, 191);
+                background: radial-gradient(circle, rgba(4, 173, 191, 1) 0%, rgba(25, 110, 255, 1) 100%);
                 cursor: pointer;
             }
             
@@ -419,7 +419,7 @@
             .about-text {
                 height: auto;
                 width: 40%;
-                font-size: 1.3rem;
+                font-size: 1.8rem;
                 margin-left: 100px;
             }
             
@@ -431,13 +431,13 @@
             #skillset {
                 width: 100%;
                 height: auto;
+                background: rgb(4, 173, 191);
+                background: radial-gradient(circle, rgba(4, 173, 191, 1) 0%, rgba(25, 110, 255, 1) 100%);
+                padding: 0 0 80px 0;
             }
-            /* .container-fluid {
-    width: 100%;
-} */
             
             h3 {
-                color: var(--dark-grey);
+                color: var(--light-gray);
                 font-size: 2.5rem;
                 font-weight: 500;
                 display: flex;
@@ -454,7 +454,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin: 10px 0;
+                margin: 30px 0 10px 0;
             }
             
             .logo-icon {
@@ -463,7 +463,7 @@
                 align-items: center;
                 justify-content: center;
                 background-color: rgb(226, 223, 223);
-                /* padding: 15px; */
+                padding: 15px;
                 margin-top: 20px;
                 border-radius: 20%;
             }
@@ -471,7 +471,7 @@
             img.logo-icon:hover {
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
             }
-            /* FOOTER SECTION */
+            /* ================= FOOTER SECTION ================= */
             
             .social-icons {
                 display: flex;
@@ -504,7 +504,7 @@
                 width: 380px;
                 height: 80px;
             }
-            /*MOBILE VIEW*/
+            /*========================== MOBILE VIEW ========================*/
             
             @media (max-width: 768px) {
                 .menu-btn {
@@ -557,9 +557,15 @@
                     text-decoration: none;
                     color: var(--light-gray);
                     z-index: 10;
-                    background: var(--mid-blue);
+                    /* background: var(--light-blue); */
+                    background: rgb(1, 76, 255);
+                    background: linear-gradient(41deg, rgba(1, 76, 255, 1) 0%, rgba(4, 173, 191, 1) 100%);
                     border-bottom: 2px solid var(--light-gray);
                     transition: all .5s ease-in-out;
+                }
+                #nav .nav-bar ul li:hover {
+                    background: rgb(4, 173, 191);
+                    background: radial-gradient(circle, rgba(4, 173, 191, 1) 0%, rgba(25, 110, 255, 1) 100%);
                 }
                 #nav .nav-bar ul li a {
                     padding: 25px;
@@ -579,55 +585,11 @@
                     flex: 1;
                     margin-left: auto;
                 }
-                /* .nav-bar ul.nav-menu {
-                    display: block;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    background: #345d96;
-                    height: 100%;
-                    padding: 30px;
-                    opacity: .9;
-                    transform: translateX(0);
-                    transition: all .5s ease-in-out;
-                    z-index: 1;
-                }
-                .nav-bar ul.nav-menu.show {
-                    transform: translateX(0)
-                }
-                .nav-bar ul.nav-menu li {
-                    padding: 20px;
-                    border-bottom: #ccc solid 1px;
-                } */
-                /* #mobile-nav .mobile-navbar {
-        width: 100vw;
-        position: fixed;
-        bottom: 0;
-        z-index: 5;
-    }
-    #mobile-nav .mobile-navbar ul {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        list-style: none;
-        padding: 20px 0;
-        margin-bottom: 0;
-        background-color: rgba(0, 0, 0, 0.6);
-    }
-    #mobile-nav .mobile-navbar ul a {
-        font-size: 2rem;
-        color: var(--orange-color);
-    }
-    #mobile-nav .mobile-navbar ul a:hover {
-        font-size: 2rem;
-        color: var(--light-blue);
-    } */
                 .arrow-down {
                     display: none;
                 }
                 .project-header {
-                    color: var(--orange-color);
+                    color: var(--dark-grey);
                     font-size: 3.5rem;
                     font-weight: 600;
                     display: flex;
@@ -733,15 +695,14 @@
                 }
                 .name {
                     margin-top: 10px;
-                    color: var(--dark-grey);
                     font-size: 1.8rem;
                     text-transform: uppercase;
                     text-align: center;
-                    color: var(--blue-color);
+                    color: var(--mid-blue);
                 }
                 .content {
                     padding: 25px 15px;
-                    color: var(--light-blue);
+                    color: var(--dark-grey);
                 }
                 .button {
                     color: var(--light-blue);
@@ -785,7 +746,7 @@
                 .about-text {
                     margin: 20px;
                     width: 100%;
-                    font-size: 0.75rem;
+                    font-size: 1.6rem;
                 }
                 /* SKILLS MOBILE */
                 .image-container {
