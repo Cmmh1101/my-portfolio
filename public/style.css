@@ -140,6 +140,8 @@
                 left: 10%;
                 color: var(--light-gray);
                 text-transform: uppercase;
+                letter-spacing: 3px;
+                line-height: 1.5;
                 z-index: 2;
             }
             
