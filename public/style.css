@@ -149,6 +149,11 @@
                 color: var(--light-blue);
             }
             
+            .hero-text p {
+                color: var(--light-gray);
+                text-transform: capitalize;
+            }
+            
             .resume-cta {
                 border: 2px solid var(--light-blue);
                 width: 175px;
