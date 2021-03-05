@@ -1,3 +1,4 @@
+// ================ Responsive Menu
 var menuBtn = document.getElementsByClassName('menu-btn')
 
 var mobileMenu = document.getElementsByClassName('nav-menu')
@@ -9,6 +10,22 @@ var clickedBtn = function() {
 menuBtn[0].addEventListener('click', clickedBtn)
 
 console.log(menuBtn[0])
+
+// End of Responsive Menu
+
+// ================ Menu scoll down hides, scroll up appears
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
+//   $(document).ready(function(){
+//     $('[data-toggle="tooltip"]').tooltip();
+// });
+
+// ================ Menu scoll down hides, scroll up appears
+
+// ================ Scroll Reveal
 
 ScrollReveal().reveal('#projects');
 ScrollReveal().reveal('#aboutme', { delay: 500 });

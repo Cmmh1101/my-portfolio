@@ -38,7 +38,7 @@
             
             #nav .nav-bar {
                 position: absolute;
-                z-index: 2;
+                z-index: 5;
                 width: 100%;
                 height: 10vh;
                 background-color: rgba(100, 100, 100, 0.2);
@@ -87,6 +87,9 @@
             
             #nav .nav-bar ul li a:hover {
                 font-weight: 700;
+            }
+            #nav .nav-bar ul li.close{
+                display: none;
             }
             /* ====================== HERO SECTION ======================= */
             
@@ -252,8 +255,8 @@
             }
             
             .restaurant-project:hover {
-                width: 450px;
-                height: 450px;
+                /* width: 450px;
+                height: 450px; */
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
             }
             
@@ -271,8 +274,8 @@
             }
             
             .store-project:hover {
-                width: 450px;
-                height: 450px;
+                /* width: 450px;
+                height: 450px; */
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
             }
             
@@ -290,8 +293,8 @@
             }
             
             .sport-project:hover {
-                width: 450px;
-                height: 450px;
+                /* width: 450px;
+                height: 450px; */
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
             }
             
@@ -309,8 +312,8 @@
             }
             
             .task-project:hover {
-                width: 450px;
-                height: 450px;
+                /* width: 450px;
+                height: 450px; */
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
             }
             
@@ -328,8 +331,8 @@
             }
             
             .competition-project:hover {
-                width: 450px;
-                height: 450px;
+                /* width: 450px;
+                height: 450px; */
                 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
             }
             
@@ -510,11 +513,12 @@
             @media (max-width: 768px) {
                 .menu-btn {
                     display: block;
-                    z-index: 10;
+                    z-index: 5;
                 }
+                
                 #nav .nav-bar {
                     position: relative;
-                    z-index: 2;
+                    /* z-index: 2; */
                     width: 100%;
                     height: 2vh;
                     background-color: transparent;
@@ -528,6 +532,7 @@
                     width: 100%;
                     z-index: 5;
                 }
+                
                 #nav .nav-bar:hover {
                     background-color: transparent;
                 }
@@ -538,16 +543,19 @@
                     margin-left: -10%;
                     display: none;
                 }
+                
                 #nav .nav-bar ul.nav-menu {
                     display: block;
                     list-style: none;
                     position: absolute;
-                    width: 85vw;
+                    width: 100%;
                     top: 0px;
                     left: 0;
                     background: #2f3640;
                     transform: translateX(-500%);
+                    z-index: 15;
                 }
+                
                 #nav .nav-bar ul.nav-menu.active {
                     transform: translateX(0)
                 }
@@ -581,6 +589,17 @@
                 #nav .nav-bar ul li a:hover {
                     font-weight: 700;
                     font-size: 1.8rem;
+                }
+                #nav .nav-bar ul li.close {
+                    position: absolute;
+                    z-index: 30;
+                    top: 0;
+                    right: 0;
+                    background: transparent;
+                    border-bottom: none;
+                    display: block;
+                    color: white;
+                    /* margin: 28px 100px 0 0; */
                 }
                 .nav-bar ul.nav-menu {
                     flex: 1;
