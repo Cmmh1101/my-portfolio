@@ -1,56 +1,67 @@
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav").style.top = "0";
+        console.log('scrolling up')
+    } else {
+        document.getElementById("nav").style.top = "-100px";
+        console.log('scrolling down')
+    }
+    prevScrollpos = currentScrollPos;
+    
+}
+
 // ================ Responsive Menu
-var menuBtn = document.getElementsByClassName('menu-btn')
+const menuBtn = document.getElementsByClassName('menu-btn')
 
-var mobileMenu = document.getElementsByClassName('nav-menu')
+const mobileMenu = document.getElementsByClassName('nav-menu')
 
-// remove nav-menu when X is clicked
-
-var closeBtn = document.getElementsByClassName('close')
+const closeMenu = document.getElementsByClassName('close')
 
 
-var clickedBtn = function() {
+
+const clickedBtn = function() {
     mobileMenu[0].classList.toggle('active')
 }
 
 menuBtn[0].addEventListener('click', clickedBtn)
 
-console.log(menuBtn[0])
-
-// remove nav-menu when X is clicked
-
-var clickedBtn = function() {
-    mobileMenu[0].classList.toggle('hide')
+const clickedX = function() {
+  mobileMenu[0].classList.remove('active')
 }
 
-menuBtn[0].addEventListener('click', clickedBtn)
-
-console.log(closeBtn[0])
-
-
+closeMenu[0].addEventListener('click', clickedX)
 
 // End of Responsive Menu
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementsByClassName('nav-menu').style.top = "0";
-  } else {
-    document.getElementsByClassName('nav-menu').style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
+// var prevScrollpos = window.pageYOffset;
+// window.onscroll = function() {
+//   var currentScrollPos = window.pageYOffset;
+//   if (prevScrollpos > currentScrollPos) {
+//     document.getElementsByClassName('nav-menu').style.top = "0";
+//   } else {
+//     document.getElementsByClassName('nav-menu').style.top = "-50px";
+//   }
+//   prevScrollpos = currentScrollPos;
+// }
 
 
-// ================ Menu scoll down hides, scroll up appears
 
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
+// ================ tooltip
+
+// $(function () {
+//     $('[data-toggle="tooltip"]').tooltip()
+//   });
 
 //   $(document).ready(function(){
 //     $('[data-toggle="tooltip"]').tooltip();
+// });
+
+// $(document).ready(function(){
+//   $('[data-toggle="tooltip"]').tooltip();
 // });
 
 // ================ Menu scoll down hides, scroll up appears
