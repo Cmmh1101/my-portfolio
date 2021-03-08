@@ -36,20 +36,6 @@ closeMenu[0].addEventListener('click', clickedX)
 
 // End of Responsive Menu
 
-/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
-// var prevScrollpos = window.pageYOffset;
-// window.onscroll = function() {
-//   var currentScrollPos = window.pageYOffset;
-//   if (prevScrollpos > currentScrollPos) {
-//     document.getElementsByClassName('nav-menu').style.top = "0";
-//   } else {
-//     document.getElementsByClassName('nav-menu').style.top = "-50px";
-//   }
-//   prevScrollpos = currentScrollPos;
-// }
-
-
-
 // ================ tooltip
 
 // $(function () {
