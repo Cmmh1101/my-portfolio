@@ -159,7 +159,7 @@ a {
   text-transform: capitalize;
 }
 
-.resume-cta {
+.btn-cta {
   border: 2px solid var(--light-blue);
   width: 175px;
   padding: 15px;
@@ -171,7 +171,7 @@ a {
   text-transform: capitalize;
 }
 
-.resume-cta:hover {
+.btn-cta:hover {
   background: rgb(4, 173, 191);
   background: radial-gradient(
     circle,
@@ -257,24 +257,24 @@ hr {
   flex-flow: wrap;
 }
 
-.restaurant-project {
+.project-1 {
   width: 400px;
   height: 400px;
   background: var(--light-gray);
   position: relative;
   border-radius: 5px;
   margin: 50px;
-  background-image: url(/img/landing-restaurant.jpg);
+  background-image: url(/img/servinginchrist.jpg);
   background-size: cover;
-  background-position: left center;
+  background-position: top center;
   transition: all 0.5s ease-in-out;
 }
 
-.restaurant-project:hover {
+.project-1:hover {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
 }
 
-.store-project {
+.project-2 {
   width: 400px;
   height: 400px;
   background: var(--light-gray);
@@ -287,28 +287,28 @@ hr {
   transition: all 0.5s ease-in-out;
 }
 
-.store-project:hover {
+.project-2:hover {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
 }
 
-.sport-project {
+.project-3 {
   width: 400px;
   height: 400px;
   background: var(--light-gray);
   position: relative;
   border-radius: 5px;
   margin: 50px;
-  background-image: url(/img/mscanes-site.jpg);
+  background-image: url(/img/virtual-assistance-site.jpg);
   background-size: cover;
   background-position: left center;
   transition: all 0.5s ease-in-out;
 }
 
-.sport-project:hover {
+.project-3:hover {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
 }
 
-.task-project {
+.project-4 {
   width: 400px;
   height: 400px;
   background: var(--light-gray);
@@ -321,11 +321,11 @@ hr {
   transition: all 0.5s ease-in-out;
 }
 
-.task-project:hover {
+.project-4:hover {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
 }
 
-.competition-project {
+.project-5 {
   width: 400px;
   height: 400px;
   background: var(--light-gray);
@@ -338,7 +338,7 @@ hr {
   transition: all 0.5s ease-in-out;
 }
 
-.competition-project:hover {
+.project-5:hover {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
 }
 
@@ -494,9 +494,227 @@ h3 {
 img.logo-icon:hover {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
 }
+
+/* ====== carousel */
+
+/* Make the image fully responsive */
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+  background-color: var(--light-blue);
+}
+
+/* ========= carousel ========== */
+
+.slides-section {
+  width: 80%;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  height: auto;
+  position: relative;
+  margin: auto;
+  background-color: var(--light-gray);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* testimonial container */
+
+.test {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 60px;
+}
+.testimonial {
+  color: var(--dark-grey);
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+
+.client-info {
+  display: flex;
+}
+.client-img {
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: var(--mid-blue);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  color: var(--light-blue);
+  background-color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: rgb(173, 173, 173);
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0;
+  left: 47.5%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* ======= CONTACT SECTION======== */
+
+#contact {
+  background-color: var(--light-gray);
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+#contact .container {
+  height: 100%;
+}
+#contact h3 {
+  color: var(--dark-grey);
+}
+#contact hr {
+  margin-bottom: 30px;
+}
+
+.contactMeForm {
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  text-align: left;
+  background: url(/img/contact.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  /* margin-bottom: 100px; */
+}
+
+.formContainer {
+  background-color: rgba(243, 244, 245, 0.767);
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.formContainer h4 {
+  text-align: center;
+  color: var(--dark-aqua);
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  padding: 20px 0;
+}
+
+.contactForm {
+  padding: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+  height: auto;
+}
+
+.form {
+  width: 100%;
+  height: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+label {
+  width: 95%;
+  line-height: 2;
+  color: var(--dark-grey);
+  padding-left: 20px;
+}
+
+input {
+  width: 95%;
+  padding-left: 10px;
+}
+
+textarea {
+  width: 95%;
+  height: auto;
+  padding: 0 10px;
+}
+
+.btn {
+  margin: 5% 35%;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.btn .btn-cta {
+  color: var(--dark-grey);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.btn .btn-cta:hover {
+  color: var(--light-gray);
+}
+
+.btn a .fas {
+  padding-right: 10px;
+}
+
+/* end of contact form */
+
 /* ================= FOOTER SECTION ================= */
 
-/* ========= Footer section ============ */
 footer .container {
   display: flex;
   justify-content: center;
@@ -538,9 +756,11 @@ footer .container .row {
   color: var(--mid-blue);
   font-size: 3rem;
   padding: 20px;
+  text-decoration: none;
 }
 .soc-icons .icon:hover {
   color: var(--light-blue);
+  text-decoration: none;
 }
 .rights {
   width: 100%;
@@ -728,67 +948,23 @@ footer .container .row {
     text-transform: uppercase;
     margin-top: 80px;
   }
-  .restaurant-project {
+  .project-1 {
     width: 330px;
     height: 450px;
-    background: var(--light-gray);
-    position: relative;
-    border-radius: 5px;
-    margin: 50px;
-    background-image: url(/img/landing-restaurant.jpg);
-    background-size: cover;
-    background-position: left center;
   }
-  .store-project {
+  .project-2 {
     width: 330px;
     height: 450px;
-    background: var(--light-gray);
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin: 50px;
-    background-image: url(/img/teque-dachi-site.jpg);
-    background-size: cover;
-    background-position: left center;
   }
 
-  .sport-project {
+  .project-3 {
     width: 330px;
     height: 450px;
-    background: var(--light-gray);
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin: 50px;
-    background-image: url(/img/mscanes-site.jpg);
-    background-size: cover;
-    background-position: left center;
   }
 
-  .task-project {
+  .project-4 {
     width: 330px;
     height: 450px;
-    background: var(--light-gray);
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin: 50px;
-    background-image: url(/img/task-manager-site.jpg);
-    background-size: cover;
-    background-position: left center;
-  }
-
-  .competition-project {
-    width: 330px;
-    height: 450px;
-    background: var(--light-gray);
-    position: relative;
-    box-shadow: -15px 7px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    margin: 50px;
-    background-image: url(/img/mscanes-site.jpg);
-    background-size: cover;
-    background-position: left center;
   }
 
   .text-container {
@@ -876,6 +1052,17 @@ footer .container .row {
   img.logo-icon:hover {
     box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
   }
+
+  /* TESTIMONIALS MOBILE */
+  .test {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .testimonial {
+    margin-bottom: 30px;
+  }
+
   /* SOCIAL MOBILE */
 
   .social-icons {
