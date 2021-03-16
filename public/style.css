@@ -181,24 +181,7 @@ a {
   color: var(--light-gray);
   text-decoration: none;
 }
-/* 
-.arrow-down {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 4rem;
-  margin-top: -8%;
-  z-index: 5;
-}
 
-.arrow-down a {
-  color: var(--light-blue);
-  z-index: 5;
-}
-
-.arrow-down a i {
-  font-weight: 100;
-} */
 /* =================== PROJECTS SECTION ================== */
 
 #projects {
@@ -220,7 +203,6 @@ a {
   justify-content: center;
   text-transform: uppercase;
   position: relative;
-  /* margin-top: 100px; */
   padding: 100px 0 20px 0;
 }
 
