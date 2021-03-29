@@ -2,6 +2,7 @@
 
 ScrollReveal().reveal('#hero');
 ScrollReveal().reveal('#projects', { delay: 500 });
+ScrollReveal().reveal('.project-item', { delay: 500 });
 ScrollReveal().reveal('#aboutme', { delay: 500 });
 ScrollReveal().reveal('#skillset', { delay: 500 });
 ScrollReveal().reveal('#contact', { delay: 500 });
