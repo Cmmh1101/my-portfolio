@@ -1,3 +1,12 @@
+// ================ Scroll Reveal
+
+ScrollReveal().reveal('#hero');
+ScrollReveal().reveal('#projects', { delay: 500 });
+ScrollReveal().reveal('#aboutme', { delay: 500 });
+ScrollReveal().reveal('#skillset', { delay: 500 });
+ScrollReveal().reveal('#contact', { delay: 500 });
+
+
 //  scroll down hide navbar - scroll up show navbar 
 
 var prevScrollpos = window.pageYOffset;
@@ -68,11 +77,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-// ================ Menu scoll down hides, scroll up appears
 
-// ================ Scroll Reveal
 
-ScrollReveal().reveal('#projects');
-ScrollReveal().reveal('#aboutme', { delay: 500 });
-ScrollReveal().reveal('#skillset', { delay: 500 });
-ScrollReveal().reveal('#contactme', { delay: 500 });
