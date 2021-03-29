@@ -297,13 +297,29 @@ hr {
   position: relative;
   border-radius: 5px;
   margin: 50px;
-  background-image: url(/img/virtual-assistance-site.jpg);
+  background-image: url(/img/lawyer-template.png);
   background-size: cover;
   background-position: left center;
   transition: all 0.5s ease-in-out;
 }
 
 .project-4:hover {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
+}
+.project-5 {
+  width: 400px;
+  height: 400px;
+  background: var(--light-gray);
+  position: relative;
+  border-radius: 5px;
+  margin: 50px;
+  background-image: url(/img/virtual-assistance-site.jpg);
+  background-size: cover;
+  background-position: left center;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-5:hover {
   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.49);
 }
 
